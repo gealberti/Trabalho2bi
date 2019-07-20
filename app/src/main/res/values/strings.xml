@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BasicConfig</string>
+    <string name="config">Configurações</string>
+    <string name="som">Som</string>
+    <string name="musica">Música</string>
+    <string name="robot">Não sou um robô</string>
+    <string-array name="titulo">
+        <item>Hacker Rápido</item>
+        <item>Espertinho</item>
+        <item>Matrix</item>
+    </string-array>
+    <string name="titulos">Escolha qual titulo deseja mostrar</string>
+
+    <string-array name="conquist">
+        <item>Conquistas</item>
+    </string-array>
+
+    <string name="cadastrese">Ainda não se cadastrou? Cadastre-se!</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="cadastrado">Cadastrar</string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+</resources>
