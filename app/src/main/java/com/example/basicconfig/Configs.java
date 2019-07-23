@@ -1,12 +1,17 @@
 package com.example.basicconfig;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 
 import android.content.Intent;
+import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.CheckBox;
 import android.widget.ListView;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +31,7 @@ public class Configs extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), Conquistas.class);
                 intent.putExtras(pacote);
                 startActivity(intent);
+
             }
 
         };
@@ -33,9 +39,35 @@ public class Configs extends AppCompatActivity {
         listView.setOnItemClickListener(itemClickListener);
     }
 
+    MediaPlayer mp;
+
+    public void tocarMusica(View view){
+        Switch musica = (Switch) view;
+        boolean isOn = musica.isChecked();
+        if(isOn){
+            mp = MediaPlayer.create(Configs.this, R.raw.megadrive);
+            mp.start();
+        }else{mp.pause();}
+    }
+
     public void cadastrarButton(View v){
         Intent intent  = new Intent(this, Cadastro.class);
         startActivity(intent);
     }
 
+    public void vereficarPessoa(View view) {
+        CheckBox robo = (CheckBox) view;
+        boolean checked = robo.isChecked();
+        if (checked) {
+            Toast.makeText(
+                    getApplicationContext(),
+                    "Será?",
+                    Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void voltar(View v){
+        Intent intent  = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }

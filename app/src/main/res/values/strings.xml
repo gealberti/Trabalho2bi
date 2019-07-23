@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">BasicConfig</string>
-    <string name="config">Configurações</string>
+    <string name="config">Configuracoes</string>
     <string name="som">Som</string>
-    <string name="musica">Música</string>
-    <string name="robot">Não sou um robô</string>
+    <string name="musica">Musica</string>
+    <string name="robot">Nao sou um robo</string>
     <string-array name="titulo">
-        <item>Hacker Rápido</item>
+        <item>Hacker Rapido</item>
         <item>Espertinho</item>
         <item>Matrix</item>
     </string-array>
@@ -15,7 +15,7 @@
         <item>Conquistas</item>
     </string-array>
 
-    <string name="cadastrese">Ainda não se cadastrou? Cadastre-se!</string>
+    <string name="cadastrese">Ainda nao se cadastrou? Cadastre-se!</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="cadastrado">Cadastrar</string>
     <string name="nome">Nome</string>

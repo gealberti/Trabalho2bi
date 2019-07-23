@@ -5,7 +5,9 @@
     android:id="@+id/nome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cadastro">
+    android:background="#f7fffb"
+    tools:context=".Cadastro"
+    >
 
     <Button
         android:id="@+id/cadastrado"
