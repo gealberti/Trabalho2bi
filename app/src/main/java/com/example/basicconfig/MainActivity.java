@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     public void entrarConfig(View v){
         Intent intent  = new Intent(this, Configs.class);
         startActivity(intent);
+        MainActivity.this.finish();
     }
 
     @Override
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         builder.setPositiveButton("Sim :(", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                finish();
+                MainActivity.this.finish();
                 System.exit(0);
             }
         });

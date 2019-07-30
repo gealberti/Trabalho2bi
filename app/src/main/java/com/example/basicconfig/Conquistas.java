@@ -44,7 +44,7 @@ public class Conquistas extends AppCompatActivity {
                 pacote.putString("escolhido", textoEscolhido);
                 Intent intent = new Intent(getBaseContext(), Configs.class);
                 intent.putExtras(pacote);
-                startActivity(intent);}
+                startActivity(intent); }
                 else if(textoEscolhido.equals("Primeiros Passos")){
                     Toast.makeText(
                             getApplicationContext(),

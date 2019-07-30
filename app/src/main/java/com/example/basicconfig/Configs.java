@@ -55,7 +55,7 @@ public class Configs extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void vereficarPessoa(View view) {
+    public void verificarPessoa(View view) {
         CheckBox robo = (CheckBox) view;
         boolean checked = robo.isChecked();
         if (checked) {
@@ -68,6 +68,8 @@ public class Configs extends AppCompatActivity {
 
     public void voltar(View v){
         Intent intent  = new Intent(this, MainActivity.class);
+        Configs.this.finish();
         startActivity(intent);
+
     }
 }
